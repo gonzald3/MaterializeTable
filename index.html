@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Import Google Icon Font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Font+Name">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <style>
+        .row > div{
+            padding: 10px;
+            background: #ddd;
+            border: 1px solid #fff;
+            line-height: 60px;
+        }
+
+        
+        .example tbody{
+            display: block;
+            overflow: auto;
+            height: 400px;
+            width: 100%;
+        }
+
+        .example thead tr {
+            display: block;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .example th {
+        padding: 15px;
+        text-align: left;
+        width: 180px;
+        border-bottom: solid lightgray;
+        border-top:solid gray;
+        color: grey;
+        font-size: 15pt;
+        
+        }
+        
+        .example td {
+        padding: 0px;
+        padding-left: 0px;
+        text-align: center;
+        width: 200px;
+        }
+
+
+
+
+
+
+    </style>
+    
+    <title>Materialize CSS</title>
+</head>
+<body>
+
+    <h5 style="margin-left: 20px; color:rgb(11, 102, 11); font-weight: 600;">2020-21 Player Statistics</h5>
+    <div >
+        <table id="example" class="example" style="width:100%;">
+            <thead>
+                <tr>
+                    <div class="col s3" id="inheritPlayer"><th id="dc"><p style="text-align: right;"><span class="material-icons">arrow_drop_up</span>Player</p></th></div>
+                    <th style="padding: 12px; color: white;"> Player Name </th>
+                    <th style="padding: 12px ;color: white;">Player Position</th>
+                  <th><span class="material-icons">swap_vert</span>G</th>
+                  <th><span class="material-icons">swap_vert</span>PTS</th>
+                  <th><span class="material-icons">swap_vert</span>FG</th>
+                  <th><span class="material-icons">swap_vert</span>FG%</th>
+                  <th><span class="material-icons">swap_vert</span>3P%</th>
+                  <th><span class="material-icons">swap_vert</span>FT%</th>
+                  <th><span class="material-icons">swap_vert</span>OREB</th>
+                  <th><span class="material-icons">swap_vert</span>DREB</th>
+                  <th><span class="material-icons">swap_vert</span>REB</th>
+                  <th><span class="material-icons">swap_vert</span>AST</th>
+                  <th><span class="material-icons">swap_vert</span>STL</th>
+                  <th><span class="material-icons">swap_vert</span>TO</th>
+                  <th><span class="material-icons">swap_vert</span>PF</th>
+                </tr>
+              </thead>
+            <tbody>
+                <tr>
+                    <div class="col s3">
+                        <td  id="dt">
+                        
+                            <p style="text-align: center; float: center;"><img style="width: 100px;float: left;" align="top" src="jaylon.png" alt="">
+                            <span style="font-weight: 700; color: rgb(11, 102, 11); white-space: nowrap; font-size: 15pt;">Jaylon Brown</span> <br> <span style="font-weight: bold; font-size: 16pt;">7 <span style="font-size: 5pt;" class="material-icons">
+                                noise_control_off</span> G-F</span></p>
+                    </td>
+                    </div>
+                    <td>58</td>
+                    <td>24.7</td>
+                    <td>9.3</td>
+                    <td>48.4%</td>
+                    <td>39.7%</td>
+                    <td>76.4%</td>
+                    <td>1.2</td>
+                    <td>4.8</td>
+                    <td>6</td>
+                    <td>3.4</td>
+                    <td>1.2</td>
+                    <td>2.7</td>
+                    <td>2.9</td>
+                </tr>
+                <tr>
+                    <div class="col s3">
+                        <td  id="dt">
+                        
+                            <p style="text-align: center; float: center;"><img style="width: 100px;float: left;" align="top" src="carsonEdwards.png" alt="">
+                            <span style="font-weight: 700; color: rgb(11, 102, 11); white-space: nowrap; font-size: 15pt;">Carsen Edwards</span> <br> <span style="font-weight: bold; font-size: 16pt;">4 <span style="font-size: 5pt;" class="material-icons">
+                                noise_control_off</span> G</span></p>
+                    </td>
+                    <td>31</td>
+                    <td>4</td>
+                    <td>1.5</td>
+                    <td>42.3%</td>
+                    <td>28.6%</td>
+                    <td>84.6%</td>
+                    <td>0.1</td>
+                    <td>0.7</td>
+                    <td>0.8</td>
+                    <td>0.5</td>
+                    <td>0.2</td>
+                    <td>0.2</td>
+                    <td>0.8</td>
+                </tr>
+                <tr>
+                    <td  id="dt">
+                        
+                        <p><img style="width: 100px;float: left;" align="top" src="tackoFall.png" alt="">
+                        <span style="font-weight: 700; color: rgb(11, 102, 11); white-space: nowrap; font-size: 15pt;">Tacko Fall</span> <br> <span style="font-weight: bold; font-size: 16pt;">99 <span style="font-size: 5pt;" class="material-icons">
+                            noise_control_off</span> C</span></p>
+                    </td>
+                    <td>19</td>
+                    <td>2.5</td>
+                    <td>1.1</td>
+                    <td>72.4%</td>
+                    <td>-</td>
+                    <td>33.3%</td>
+                    <td>0.8</td>
+                    <td>1.9</td>
+                    <td>2.7</td>
+                    <td>0.2</td>
+                    <td>0.1</td>
+                    <td>0.3</td>
+                    <td>1.2</td>
+                </tr>
+                <tr>
+                    <td style="width: 600px">
+                        
+                        <p><img style="width: 100px;float: left;" align="top" src="evanFournier.png" alt="">
+                        <span style="font-weight: 700; color: rgb(11, 102, 11); white-space: nowrap; font-size: 15pt;">Evan Fournier</span> <br> <span style="font-weight: bold; font-size: 16pt;">94 <span style="font-size: 5pt;" class="material-icons">
+                            noise_control_off</span> G-F</span></p>
+                    </td>
+                    <td>42</td>
+                    <td>17.1</td>
+                    <td>5.9</td>
+                    <td>45.7%</td>
+                    <td>41.3%</td>
+                    <td>78.8%</td>
+                    <td>0.2</td>
+                    <td>2.8</td>
+                    <td>3</td>
+                    <td>3.4</td>
+                    <td>1.1</td>
+                    <td>1.7</td>
+                    <td>2.3</td>
+                </tr>
+                <tr>
+                    <td style="width: 600px">
+                        
+                        <p><img style="width: 100px;float: left;" align="top" src="robertWilliams.png" alt="">
+                        <span style="font-weight: 700; color: rgb(11, 102, 11); white-space: nowrap; font-size: 15pt;">Robert Williams</span> <br> <span style="font-weight: bold; font-size: 16pt;">44 <span style="font-size: 5pt;" class="material-icons">
+                            noise_control_off</span> C-F</span></p>
+                    </td>
+                    <td>52</td>
+                    <td>8</td>
+                    <td>3.6</td>
+                    <td>72.1%</td>
+                    <td>-</td>
+                    <td>61.6%</td>
+                    <td>2.6</td>
+                    <td>4.3</td>
+                    <td>6.9</td>
+                    <td>1.8</td>
+                    <td>0.8</td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+        
+                
+            </tbody>
+            
+        </table>
+        
+
+
+    </div>
+
+
+
+</body>
+</html>
